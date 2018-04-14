@@ -3,10 +3,10 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Nova Tarefa</title>
+        <title>Novo Usuario</title>
     </head>
     <body>
-        <h1>Nova Tarefa</h1>
+        <h1>Novo Usuario</h1>
         <form method="post">
             <label>Título: <input type="text" name="titulo" value="" /> </label>
             <br>
