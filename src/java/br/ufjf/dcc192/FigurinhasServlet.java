@@ -9,21 +9,20 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(name = "UsuarioServlet", urlPatterns = {"/usuarios.html", "/FigurinhasServlet.html"})
+@WebServlet(name = "UsuarioServlet", urlPatterns = {"/usuarios.html", "/FigurinhasServlet.html", "novoUsuario.html"})
 public class FigurinhasServlet extends HttpServlet {
-
-    
+   
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) 
             throws ServletException, IOException {
          if("/FigurinhasServlet.html".equals(request.getServletPath())){
              listarFigurinhas(request, response);
-         }else if ("/nova.html".equals(request.getServletPath())){
-             criarFigurinhasForm(request, response);
+         }else if ("/novoUsuario.html".equals(request.getServletPath())){
+             criarUsuarioForm(request, response);
          }else if ("/edita.html".equals(request.getServletPath())){
-            editaFigurinhasForm(request, response);
+             editaUsuarioForm(request, response);
          }else if ("/excluir.html".equals(request.getServletPath())){
-            exlcuiFigurinhasForm(request, response); 
+             excluiUsuarioForm(request, response);
          }
     }
 
@@ -35,15 +34,16 @@ public class FigurinhasServlet extends HttpServlet {
         despachante.forward(request, response);
     }
 
-    private void criarFigurinhasForm(HttpServletRequest request, HttpServletResponse response) {
+    private void criarUsuarioForm(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        RequestDispatcher despachante = request.getRequestDispatcher("/WEB-INF/Usuario-novo.jsp");
+        despachante.forward(request, response);
+    }
+
+    private void editaUsuarioForm(HttpServletRequest request, HttpServletResponse response) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    private void editaFigurinhasForm(HttpServletRequest request, HttpServletResponse response) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    private void exlcuiFigurinhasForm(HttpServletRequest request, HttpServletResponse response) {
+    private void excluiUsuarioForm(HttpServletRequest request, HttpServletResponse response) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
