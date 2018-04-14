@@ -14,9 +14,9 @@
                 t = (Figurinhas)request.getAttribute("figurinhas");
             %>   
         <form method="post">
-            <label>Código: <input type="text" name="id" size="2" value="<%=request.getParameter("id")%>" disabled="disable" /> </label>
+            <label>Código: <input type="text" name="codFigura" size="2" value="<%=request.getParameter("id")%>" disabled="disable" /> </label>
             <br>
-            <label>Descricao: <input type="text" name="titulo" value="<%=t.getDescricao()%>"/> </label>
+            <label>Descricao: <input type="text" name="descricao" value="<%=t.getDescricao()%>"/> </label>
             <br>
             <br>
             <input type="submit" value="Gravar" />          
