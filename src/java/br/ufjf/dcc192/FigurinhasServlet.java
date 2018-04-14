@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(name = "FigurinhasServlet", urlPatterns = {"/usuarios.html", "/FigurinhasServlet.html"})
+@WebServlet(name = "UsuarioServlet", urlPatterns = {"/usuarios.html", "/FigurinhasServlet.html"})
 public class FigurinhasServlet extends HttpServlet {
 
     
