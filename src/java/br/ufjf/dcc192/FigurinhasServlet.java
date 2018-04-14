@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(name = "FigurinhasServlet", urlPatterns = {"/usuarios.html", "/FigurinhasServlet.html", "/novoUsuario.html"})
+@WebServlet(name = "FigurinhasServlet", urlPatterns = {"/usuarios.html", "/FigurinhasServlet.html", "/novoUsuario.html","/edita.html","/excluir.html"})
 public class FigurinhasServlet extends HttpServlet {
    
     @Override
