@@ -7,10 +7,10 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Lista de Tarefas</title>
+        <title>Lista de Figurinhas</title>
     </head>
     <body>
-        <h1>Lista de Tarefas</h1>
+        <h1>Lista de Figurinhas</h1>
         <table border = 1>
             <th>ID</th>
             <th>Descrição</th>
