@@ -19,7 +19,7 @@
             <label>Descricao: <input type="text" name="titulo" value="<%=t.getDescricao()%>"/> </label>
             <br>
             <br>
-            <input type="submit" value="Gravar" />
+            <input type="submit" value="Gravar" />          
             
         </form>
     </body>
