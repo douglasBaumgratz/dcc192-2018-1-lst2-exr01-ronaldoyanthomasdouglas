@@ -1,12 +1,16 @@
 package br.ufjf.dcc192;
 
+import java.util.List;
+
 public class Usuario {
     String codigo;
     String nome;
+    List<Figurinhas> album;
 
-    public Usuario(String codigo, String nome) {
+    public Usuario(String codigo, String nome, List<Figurinhas> album) {
         this.codigo = codigo;
         this.nome = nome;
+        this.album = album;
     }
 
     public Usuario() {
@@ -18,22 +22,22 @@ public class Usuario {
 
     public void setCodigo(String codigo) {
         this.codigo = codigo;
+    }   
+
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
-
-    public String getDescricao() {
+    public String getNome() {
         return nome;
     }
-
-    public void setDescricao(String descricao) {
-        this.nome = descricao;
+    
+    public void setAlbum(List<Figurinhas> album) {
+        this.album = album;
     }
 
-    @Override
-    public String toString() {
-        return "Tarefas: " + "Titulo: " + codigo + " / Descricao: " + nome;
+    public List<Figurinhas> getAlbum() {
+        return album;
     }
-    
-    
     
 }
